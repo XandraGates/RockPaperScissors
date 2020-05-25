@@ -1,0 +1,138 @@
+body {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	background-color: #222831;
+	color: #EEEEEE;
+	margin: 0;
+	text-align: center;
+}
+
+
+
+.header {
+	margin-top: -2.75rem;
+	padding: 5px;
+	border-bottom: 20px solid #00ADB5;
+}
+
+.choices {
+	background-color: #393E46;
+}
+
+p {
+	font-weight: 900;
+}
+
+h1 {
+	font-family: 'Chelsea Market', cursive;
+	text-shadow: 2px 2px 4px #000000;
+	text-transform: uppercase;
+}
+
+h2 {
+	display: inline-block;
+	margin: 2rem;
+	transition: 0.5s;
+	transition-timing-function: ease-in;
+}
+
+
+h2:hover {
+   transform: scale(1.5);
+   cursor: pointer;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+h2:active {
+   transform: scale(1.5);
+   cursor: pointer;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+
+.results {
+	padding: 5px;
+	border-top: 20px solid #00ADB5;
+}
+
+#winner {
+	text-transform: uppercase;
+}
+
+footer {
+    background-color: #00ADB5;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+   transform: scale(1.2);
+   cursor: pointer;
+}
+
+a:active {
+   transform: scale(1.2);
+   cursor: pointer;
+}
+
+/* Text animations */
+
+#wait {
+white-space: nowrap;
+overflow: hidden;
+animation: animated-text 2s steps(30,end) 1s 1 normal both;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 90%;}
+}
+
+
+/* pre-made animations from: https://animista.net */
+.bounce-top {-webkit-animation:bounce-top .9s both;animation:bounce-top .9s both}
+
+
+@-webkit-keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}@keyframes bounce-top{0%{-webkit-transform:translateY(-45px);transform:translateY(-45px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{-webkit-transform:translateY(-24px);transform:translateY(-24px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}65%{-webkit-transform:translateY(-12px);transform:translateY(-12px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}82%{-webkit-transform:translateY(-6px);transform:translateY(-6px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}93%{-webkit-transform:translateY(-4px);transform:translateY(-4px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}25%,55%,75%,87%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}100%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}}
+
+.tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+/* button styling */
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color: #EEEEEE;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-size:15px;
+	font-family: 'Chelsea Market', cursive;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	text-transform: uppercase;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.hideTxt {
+	display: none;
+}
